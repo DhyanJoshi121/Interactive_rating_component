@@ -40,7 +40,7 @@ html{
     font-family: 'Overpass',sans-serif;
 }
 
-.main-card{
+.card{
     position: absolute;
     top:50%;
     left: 50%;
@@ -56,12 +56,14 @@ html{
     border-radius: 2rem;
 }
 
-.title{
+
+
+.title, .thanksTitle{
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-.text{
+.text, .thanksText{
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--Light_Grey);
@@ -111,4 +113,27 @@ html{
 .submit:hover{
     background-color:var(--White);
     color:var(--Orange_primary);
+}
+
+.ratingOutOf5{
+    color:var(--Orange_primary);
+    background-color: var(--btn_color2);
+    padding: 1rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.thanks-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.thanksText{
+    text-align: center;
 }
