@@ -92,14 +92,12 @@ html{
     justify-content: space-between;
 }
 
-input:checked + label{
+.rateClick{
     background-color:var(--Light_Grey);
     color:white;
 }
 
-.ratings input{
-    display: none;
-}
+
 
 .submit{
     height:4rem;
