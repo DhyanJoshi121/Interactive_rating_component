@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Orange_primary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+    --btn_color: hsl(211, 35%, 14%);
+    --btn_color2: hsl(213, 22%, 24%);
+}
+
+html{
+    
+    font-size: 62.5%;
+}
+
+
+.imgDiv{
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    background-color: var(--btn_color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:var(--Very_Dark_Blue);
+    color:white;    
+    font-family: 'Overpass',sans-serif;
+}
+
+.main-card{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--Dark_Blue);
+    max-width: 40rem;
+    max-height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Light_Grey);
+    line-height: 2.5rem;
+}
+
+.rate{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--btn_color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    color:var(--Light_Grey)
+}
+
+.rate:hover{
+    background-color: var(--Orange_primary);
+    color:var(--White);
+}
+
+
+
+.ratings{
+    display: flex;
+    justify-content: space-between;
+}
+
+input:checked + label{
+    background-color:var(--Light_Grey);
+    color:white;
+}
+
+.ratings input{
+    display: none;
+}
+
+.submit{
+    height:4rem;
+    border-radius: 10rem;
+    border-style: none;
+    font-weight: 400;
+    background-color: var(--Orange_primary);
+    color: white;
+}
+
+.submit:hover{
+    background-color:var(--White);
+    color:var(--Orange_primary);
+}
